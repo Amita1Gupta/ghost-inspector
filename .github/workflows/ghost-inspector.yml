@@ -17,6 +17,6 @@ jobs:
         with:
           args: >
             test execute-on-demand ${{ secrets.GI_ORGANIZATION_ID }} 
-            Test_01.json
+            Test1.json
             --apiKey ${{ secrets.GI_API_KEY }}
             --errorOnFail
