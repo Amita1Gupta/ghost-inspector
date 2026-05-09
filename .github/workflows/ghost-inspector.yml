@@ -1,0 +1,18 @@
+name: Ghost Inspector Test
+on: [push]
+
+jobs:
+  run-gi-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Execute On-demand Test
+        uses: docker://ghostinspector/cli
+        with:
+          args: >
+            test execute-on-demand ${{ secrets.GI_ORGANIZATION_ID }} 
+            ./path/to/your/test.json
+            --apiKey ${{ secrets.GI_API_KEY }}
+            --errorOnFail
