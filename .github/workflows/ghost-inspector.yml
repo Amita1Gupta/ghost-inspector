@@ -1,5 +1,9 @@
-name: Ghost Inspector Test
-on: [push]
+name: Ghost Inspector Manual Run
+run-name: "Ghost Inspector: ${{ github.actor }} triggered on-demand test"
+
+on:
+  # Enables manual execution from the Actions tab
+  workflow_dispatch:
 
 jobs:
   run-gi-test:
@@ -13,6 +17,6 @@ jobs:
         with:
           args: >
             test execute-on-demand ${{ secrets.GI_ORGANIZATION_ID }} 
-            ./69f6e8f62b101e5b0e262908.json
+            69f6e8f62b101e5b0e262908.json
             --apiKey ${{ secrets.GI_API_KEY }}
             --errorOnFail
