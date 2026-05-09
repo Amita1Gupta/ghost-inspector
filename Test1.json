@@ -1,0 +1,21 @@
+{
+  "_id": "69febebe2b101e5b0e28daeb",
+  "name": "Test_01A",
+  "startUrl": "https://www.google.com/",
+  "steps": [
+    {
+      "command": "assertElementPresent",
+      "target": "input[name='btnK']",
+      "value": "",
+      "optional": false,
+      "private": false,
+      "sequence": 0
+    }
+  ],
+  "viewportSize": {
+    "width": 1024,
+    "height": 768
+  },
+  "screenshotCompareEnabled": true,
+  "screenshotCompareThreshold": 0.1
+}
