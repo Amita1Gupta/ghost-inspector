@@ -13,6 +13,6 @@ jobs:
         with:
           args: >
             test execute-on-demand ${{ secrets.GI_ORGANIZATION_ID }} 
-            ./path/to/your/test.json
+            ./69f6e8f62b101e5b0e262908.json
             --apiKey ${{ secrets.GI_API_KEY }}
             --errorOnFail
