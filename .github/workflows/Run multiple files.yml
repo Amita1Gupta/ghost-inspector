@@ -1,1 +1,31 @@
+name: Ghost Inspector Manual Run
 
+run-name: "Ghost Inspector: ${{ github.actor }} triggered on-demand test"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-gi-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run All Ghost Inspector JSON Files
+        run: |
+          for file in Sanity Test/*.json
+          do
+            echo "Running $file"
+
+            docker run --rm \
+              -v ${{ github.workspace }}:/tmp \
+              ghostinspector/cli \
+              test execute-on-demand \
+              ${{ secrets.GI_ORGANIZATION_ID }} \
+              /tmp/$file \
+              --apiKey ${{ secrets.GI_API_KEY }} \
+              --errorOnFail
+
+          done
