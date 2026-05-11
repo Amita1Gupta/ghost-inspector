@@ -5,6 +5,9 @@ run-name: "Ghost Inspector: ${{ github.actor }} triggered on-demand test"
 on:
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   run-gi-test:
     runs-on: ubuntu-latest
