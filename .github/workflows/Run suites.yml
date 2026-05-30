@@ -1,4 +1,4 @@
-name: Execution Suite Run and Integrate Test Results
+name: Run suites
 run-name: "Ghost Inspector: ${{ github.actor }} triggered on-demand test"
 
 on:
