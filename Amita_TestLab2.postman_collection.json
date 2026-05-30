@@ -1,0 +1,179 @@
+{
+  "info": {
+    "_postman_id": "ebb95185-1d74-4be0-9498-9599454b9a3a",
+    "name": "Amita_TestLab2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12067067",
+    "_collection_link": "https://go.postman.co/collection/12067067-ebb95185-1d74-4be0-9498-9599454b9a3a?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Amita_TestLab2",
+      "item": [
+        {
+          "name": "6.0 Sanity suites (OID-100660)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"startUrl\": \"{{startUrl}}\",\r\n  \"Google_Auth_URL\": \"{{Google_Auth_URL}}\",\r\n  \"Google_ClientID\": \"{{Google_ClientID}}\",\r\n  \"Google_Client_Secret\": \"{{Google_Client_Secret}}\",\r\n  \"Google_Redirect_URL\": \"{{Google_Redirect_URL}}\",\r\n  \"Google_Token_URL\": \"{{Google_Token_URL}}\",\r\n  \"version_Value\": \"{{version_Value}}\",\r\n  \"Change\": \"{{Change}}\",\r\n  \"comment\": \"{{comment}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.ghostinspector.com/v1/suites/6a1a30530f1aedc97d96da77/execute/?apiKey={{apiKey}}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "ghostinspector",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "suites",
+                "6a1a30530f1aedc97d96da77",
+                "execute",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "apiKey",
+                  "value": "{{apiKey}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "6.0 Sanity suites (OID-100660) Copy",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"startUrl\": \"{{startUrl}}\",\r\n  \"Google_Auth_URL\": \"{{Google_Auth_URL}}\",\r\n  \"Google_ClientID\": \"{{Google_ClientID}}\",\r\n  \"Google_Client_Secret\": \"{{Google_Client_Secret}}\",\r\n  \"Google_Redirect_URL\": \"{{Google_Redirect_URL}}\",\r\n  \"Google_Token_URL\": \"{{Google_Token_URL}}\",\r\n  \"version_Value\": \"{{version_Value}}\",\r\n  \"Change\": \"{{Change}}\",\r\n  \"comment\": \"{{comment}}\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.ghostinspector.com/v1/suites/6a1a30632b101e5b0e3ef82a/execute/?apiKey={{apiKey}}",
+              "protocol": "https",
+              "host": [
+                "api",
+                "ghostinspector",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "suites",
+                "6a1a30632b101e5b0e3ef82a",
+                "execute",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "apiKey",
+                  "value": "{{apiKey}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "password",
+        "value": "OrcSupport_qaauto60_2865!",
+        "type": "string"
+      },
+      {
+        "key": "username",
+        "value": "orcanos.tech",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "apiKey",
+      "value": ""
+    },
+    {
+      "key": "startUrl",
+      "value": ""
+    },
+    {
+      "key": "Build_Version",
+      "value": ""
+    },
+    {
+      "key": "Google_Auth_URL",
+      "value": ""
+    },
+    {
+      "key": "Google_ClientID",
+      "value": ""
+    },
+    {
+      "key": "Google_Client_Secret",
+      "value": ""
+    },
+    {
+      "key": "Google_Redirect_URL",
+      "value": ""
+    },
+    {
+      "key": "Google_Token_URL",
+      "value": ""
+    },
+    {
+      "key": "version_Value",
+      "value": ""
+    },
+    {
+      "key": "Change",
+      "value": ""
+    },
+    {
+      "key": "comment",
+      "value": ""
+    }
+  ]
+}
