@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Selected Collection
         run: |
-          case "${{ inputs.collection }}" in
+          case "${{ inputs.Execution Set }}" in
             TestLab1)
               newman run Execution Set/Amita_TestLab1.postman_collection.json
               ;;
