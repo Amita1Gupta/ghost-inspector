@@ -33,6 +33,7 @@ jobs:
               newman run Execution/Amita_TestLab1.postman_collection.json
               ;;
             TestLab2)
-              newman run Execution/Amita_TestLab22.postman_collection.json
+                  newman run collections/Amita_TestLab22.postman_collection.json \
+                    --reporters cli
               ;;
           esac
