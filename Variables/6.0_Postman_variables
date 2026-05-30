@@ -1,0 +1,47 @@
+  "variable": [
+    {
+      "key": "apiKey",
+      "value": "07e0e435fac2acb16ed164d85f4bcd590b31f80d"
+    },
+    {
+      "key": "startUrl",
+      "value": ""
+    },
+    {
+      "key": "Build_Version",
+      "value": ""
+    },
+    {
+      "key": "Google_Auth_URL",
+      "value": ""
+    },
+    {
+      "key": "Google_ClientID",
+      "value": ""
+    },
+    {
+      "key": "Google_Client_Secret",
+      "value": ""
+    },
+    {
+      "key": "Google_Redirect_URL",
+      "value": ""
+    },
+    {
+      "key": "Google_Token_URL",
+      "value": ""
+    },
+    {
+      "key": "version_Value",
+      "value": ""
+    },
+    {
+      "key": "Change",
+      "value": ""
+    },
+    {
+      "key": "comment",
+      "value": ""
+    }
+  ]
+}
