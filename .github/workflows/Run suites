@@ -1,0 +1,35 @@
+name: Execution Suite Run and Integrate Test Results
+run-name: "Ghost Inspector: ${{ github.actor }} triggered on-demand test"
+
+on:
+  # Enables manual execution from the Actions tab
+  workflow_dispatch:
+inputs:
+      collection:
+        description: 'Select Suite to run'
+        required: true
+        type: choice
+        options:
+          -  TestLab1
+          -  TestLab2
+
+jobs:
+  run-gi-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Run Selected Collection
+        run: |
+          case "${{ github.event.inputs.collection }}" in
+            TestLab1)
+              newman run collections/Amita_TestLab1.postman_collection.json
+              ;;
+             TestLab2)
+              newman run collections/Amita_TestLab2.postman_collection.json
+              ;;
+          esac
