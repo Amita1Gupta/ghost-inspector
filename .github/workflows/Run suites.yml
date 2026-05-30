@@ -1,4 +1,4 @@
-name: Ghost Inspector Manual Run
+name: Run_Suites_testresults
 run-name: "Ghost Inspector: ${{ github.actor }} triggered on-demand test"
 
 on:
