@@ -91,21 +91,7 @@
       ]
     }
   ],
-  "auth": {
-    "type": "basic",
-    "basic": [
-      {
-        "key": "password",
-        "value": "OrcSupport_qaauto60_2865!",
-        "type": "string"
-      },
-      {
-        "key": "username",
-        "value": "orcanos.tech",
-        "type": "string"
-      }
-    ]
-  },
+ 
   "event": [
     {
       "listen": "prerequest",
@@ -133,7 +119,7 @@
   "variable": [
     {
       "key": "apiKey",
-      "value": "07e0e435fac2acb16ed164d85f4bcd590b31f80d"
+      "value": ""
     },
     {
       "key": "startUrl",
