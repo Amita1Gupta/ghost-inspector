@@ -28,11 +28,11 @@ jobs:
 
       - name: Run Selected Collection
         run: |
-          case "${{ inputs.Execution Set }}" in
+          case "${{ inputs.Execution }}" in
             TestLab1)
-              newman run Execution Set/Amita_TestLab1.postman_collection.json
+              newman run Execution/Amita_TestLab1.postman_collection.json
               ;;
             TestLab2)
-              newman run Execution Set/Amita_TestLab2.postman_collection.json
+              newman run Execution/Amita_TestLab2.postman_collection.json
               ;;
           esac
