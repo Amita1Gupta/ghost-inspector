@@ -1,4 +1,4 @@
-name: Run suites
+name: Ghost Inspector Manual Run
 run-name: "Ghost Inspector: ${{ github.actor }} triggered on-demand test"
 
 on:
@@ -32,4 +32,4 @@ jobs:
              TestLab2)
               newman run collections/Amita_TestLab2.postman_collection.json
               ;;
-          esac
+          
