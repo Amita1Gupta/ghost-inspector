@@ -1,0 +1,22 @@
+name: Ghost Inspector Manual Run
+run-name: "Ghost Inspector: ${{ github.actor }} triggered on-demand test"
+
+on:
+  # Enables manual execution from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  run-gi-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Execute On-demand Test
+        uses: docker://ghostinspector/cli
+        with:
+          args: >
+            test execute-on-demand ${{ secrets.GI_ORGANIZATION_ID }} 
+            Test1.json
+            --apiKey ${{ secrets.GI_API_KEY }}
+            --errorOnFail
