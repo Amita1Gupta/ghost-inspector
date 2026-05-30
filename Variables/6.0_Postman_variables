@@ -1,4 +1,8 @@
-    {
+  {
+  "id": "Postman_variables1",
+  "name": "6.0_Postman_variables",
+  "values": [
+  {
       "key": "apiKey",
       "value": "07e0e435fac2acb16ed164d85f4bcd590b31f80d"
     },
@@ -42,3 +46,5 @@
       "key": "comment",
       "value": ""
     }
+  ]
+}
