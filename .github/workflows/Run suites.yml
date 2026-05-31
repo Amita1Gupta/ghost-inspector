@@ -11,7 +11,7 @@ on:
         options:
           - TestLab1
           - TestLab2
-      build_version:
+      build_version(xx.xx.xxx.xxxx):
         description: 'Build Version'
         required: true
         type: string
@@ -35,13 +35,13 @@ jobs:
             TestLab1)
               newman run Execution/Amita_TestLab1.postman_collection.json \
                 -e Variables/6.0_Postman_variables \
-                --env-var "Build_Version=${{ inputs.build_version }}" \
+                --env-var "tmsBuildVersion=${{ inputs.build_version }}" \
                 --reporters cli
               ;;
             TestLab2)
                   newman run Execution/Amita_TestLab22.postman_collection.json \
                     -e Variables/6.0_Postman_variables \
-                    --env-var "Build_Version=${{ inputs.build_version }}" \
+                    --env-var "tmsBuildVersion=${{ inputs.build_version }}" \
                     --reporters cli
               ;;
           esac
