@@ -11,8 +11,8 @@ on:
         options:
           - TestLab1
           - TestLab2
-      build_version(xx.xx.xxx.xxxx):
-        description: 'Build Version'
+      build_version:
+        description: 'Build Version(xx.xx.xxx.xxxx)'
         required: true
         type: string
 env:
