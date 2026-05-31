@@ -1,50 +1,38 @@
   {
-  "id": "Postman_variables1",
-  "name": "6.0_Postman_variables",
+   "id": "6.0.0.x_Dedicated_Variables",
+  "name": "6.0_Variables",
   "values": [
-  {
+   {
       "key": "apiKey",
       "value": "07e0e435fac2acb16ed164d85f4bcd590b31f80d"
     },
+	{
+      "key": "giAPIKey",
+      "value": "a586d0b12f18f714a202086a4ae5ea18aeecd626"
+    },
+		{
+      "key": "tmsEnvironment",
+      "value": "orcanos"
+    },
+	{
+      "key": "tmsAPIKey",
+      "value": "YqVnv30yUBPxL6UhV7zynulx5ORmPAlQAzbxbhBWDCWs"
+    },
+		{
+      "key": "tmsBuildVersion",
+      "value": "06.00.000.0101"
+    },
     {
       "key": "startUrl",
-      "value": ""
+      "value": "https://app.orcanos.com/qaauto60/web/Account/Login"
     },
     {
       "key": "Build_Version",
-      "value": ""
-    },
-    {
-      "key": "Google_Auth_URL",
-      "value": ""
-    },
-    {
-      "key": "Google_ClientID",
-      "value": ""
-    },
-    {
-      "key": "Google_Client_Secret",
-      "value": ""
-    },
-    {
-      "key": "Google_Redirect_URL",
-      "value": ""
-    },
-    {
-      "key": "Google_Token_URL",
-      "value": ""
-    },
-    {
-      "key": "version_Value",
-      "value": ""
-    },
-    {
-      "key": "Change",
-      "value": ""
+      "value": "6.0.0.101"
     },
     {
       "key": "comment",
-      "value": ""
+      "value": "New"
     }
   ]
 }
